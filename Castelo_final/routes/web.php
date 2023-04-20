@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PersonagensController;
+use App\Http\Controllers\RotasController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +27,6 @@ Route::get('/personagens',[PersonagensController::class, 'ListarPersonagens']);
 Route::get('/personagens/create',[PersonagensController::class, 'CriarPersonagens']);
 Route::post('personagens/armazenar',[PersonagensController::class, 'store']);
 Route::post('/personagens/ProcurarPersonagem',[PersonagensController::class, 'ProcurarPersonagem']);
+
+Route::get('/conselho',[RotasController::class, 'ConselhoSulAmericano']);
+Route::get('/castelobruxo',[RotasController::class, 'CasteloBruxo']);

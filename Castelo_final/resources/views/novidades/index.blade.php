@@ -13,8 +13,8 @@
             quartoTitulo="Os 4 times de CasteloBruxo"
             quartoTexto="Descubra qual Time voce seria em CasteloBruxo"
             primeiroLink="/personagens"
-            segundoLink="/personagens"
-            terceiroLink="/personagens"
+            segundoLink="/conselho"
+            terceiroLink="/castelobruxo"
             quartoLink="/personagens"
         ></x-card>
         <x-carrosel
@@ -27,8 +27,8 @@
             quartoTitulo="Os 4 times de CasteloBruxo"
             quartoTexto="Descubra qual Time voce seria em CasteloBruxo"
             primeiroLink="/personagens"
-            segundoLink="/personagens"
-            terceiroLink="/personagens"
+            segundoLink="/conselho"
+            terceiroLink="/castelobruxo"
             quartoLink="/personagens"
         ></x-carrosel>
         <div class="mt-5">
