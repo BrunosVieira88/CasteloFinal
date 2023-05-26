@@ -12,6 +12,7 @@
         <a href="/new" class="btn btn-primary" style="opacity: 0.9;position:absolute;margin-top:25%;">Entrar</a>
       </div>
       <script>
+      
         // Define a mensagem que será exibida
         const message = "BEM VINDO ESTUDANTE A CASTELOBRUXO";
 
