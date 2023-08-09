@@ -26,6 +26,7 @@
     <button type="submit">Pesquisar</button>
     </form>
     <section class="container">
+        <a href="/personagens/create">Criar</a>
         @isset($personagens)
             @foreach ($personagens->groupBy('ramo') as $ramo => $personagensDoRamo)
                     <div class="row card p-4 mt-3">
@@ -47,7 +48,7 @@
         @endisset
     </section>
 
-        <a href="/personagens/create">Criar</a>
+       
         <script>
             function redirecionar(nome) {
                 window.location.href = nome;

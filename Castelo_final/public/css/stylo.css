@@ -1,10 +1,4 @@
-.resumo {
 
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 h1 {
     font-size: 2em;
     font-weight: bold;
@@ -59,15 +53,6 @@ ul {
       text-align: center;
       margin-top: 50px;
   }
-
-
-
-  /* Adiciona uma sombra na caixa de resumo */
-  .resumo {
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-      padding: 20px;
-  }
-
   /* Adiciona margens nas seções de conteúdo */
 .conteudo {
 margin-top: 30px;

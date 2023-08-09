@@ -1,3 +1,9 @@
+<style>
+  .img-edit{
+    height: 80vh ;
+    width: 80vh;
+  }
+  </style>
 <div class="row aparece mt-3" id="grande" >
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -8,7 +14,7 @@
         </div>
         <div class="carousel-inne carousel-container">
           <div class="carousel-item active">
-            <img src="img/PersonagensReunidos.png" class="d-block  " style="box-shadow: 2px 2px 4px white;margin-left: 25%;width: 50%;" alt="...">
+            <img src="img/PersonagensReunidos.png" class="d-block img-edit " style="box-shadow: 2px 2px 4px white;margin-left: 25%;width: 50%;" alt="...">
             <div class="carousel-caption d-none d-md-block" style="background-color: rgba(240, 248, 255, 0.2);">
               <h5 class="melhorLeitura">{{ $primeiroTitulo }}</h5>
               <p class="melhorLeitura">{{ $primeiroTexto }}</p>
@@ -16,7 +22,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/CMB.png" class="d-block " alt="..." style="box-shadow: 2px 2px 4px white;margin-left: 25%;">
+            <img src="img/CMB.png" class="d-block img-edit" alt="..." style="box-shadow: 2px 2px 4px white;margin-left: 25%;">
             <div class="carousel-caption d-none d-md-block" style="background-color: rgba(240, 248, 255, 0.2);">
                 <p class="melhorLeitura" >{{ $segundoTitulo }} </p>
                 <p class="melhorLeitura">{{ $segundoTexto }} </p>
@@ -24,7 +30,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/CasteloBruxo.png" class="d-block " alt="..." style="box-shadow: 2px 2px 4px white;margin-left: 25%;">
+            <img src="img/CasteloBruxo.png" class="d-block img-edit" alt="..." style="box-shadow: 2px 2px 4px white;margin-left: 25%;">
             <div class="carousel-caption d-none d-md-block" style="background-color: rgba(240, 248, 255, 0.2);">
                 <p class="melhorLeitura">{{ $terceiroTitulo }}</p>
                 <p class="melhorLeitura">{{ $terceiroTexto }}</p>
@@ -32,7 +38,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/Times.png" class="d-block " alt="..." style="box-shadow: 2px 2px 4px white;margin-left: 15%;width: 70%;">
+            <img src="img/Times.png" class="d-block img-edit" alt="..." style="box-shadow: 2px 2px 4px white;margin-left: 15%;width: 70%;">
             <div class="carousel-caption d-none d-md-block" style="background-color: rgba(240, 248, 255, 0.2);">
                 <p class="melhorLeitura">{{ $quartoTitulo }}</p>
                 <p class="melhorLeitura">{{ $quartoTexto }}</p>
