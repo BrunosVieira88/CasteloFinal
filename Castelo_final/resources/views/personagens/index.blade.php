@@ -40,7 +40,9 @@
                                             <span class="position-absolute bg-light text-dark px-4 py-0 borbulhando">{{ $personagem->nome }} {{ $personagem->sobrenome }}</span>
                                         </div>
                                     </div>
+                                    <a href="/personagens/editar/{{$personagem->id}}">editar</a>
                                 </div>
+                                
                             @endforeach
                         </div>
                     </div>

@@ -25,6 +25,9 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/personagens',[PersonagensController::class, 'ListarPersonagens']);
 Route::get('/personagens/create',[PersonagensController::class, 'CriarPersonagens']);
+Route::get('/personagens/editar/{id}',[PersonagensController::class, 'ResgatarPersonagens']);
+Route::post('/personagens/atualizar/{id}',[PersonagensController::class,'atualizarPersonagem'])->name('personagens.atualizar');
+
 Route::post('personagens/armazenar',[PersonagensController::class, 'store']);
 Route::post('/personagens/ProcurarPersonagem',[PersonagensController::class, 'ProcurarPersonagem']);
 

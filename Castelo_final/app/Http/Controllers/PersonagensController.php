@@ -37,6 +37,14 @@ class PersonagensController extends Controller
         return view('personagens.create');
     }
 
+    public function ResgatarPersonagens($id)
+    {
+        $personagem = Personagen::find($id);
+
+        return view('/personagens/edit', compact('personagem'));
+
+    }
+
     public function store(Request $request)
     {
         $request->validate([
@@ -54,12 +62,43 @@ class PersonagensController extends Controller
         $personagem->ramo = $request->input('ramo');
         $personagem->times = $request->input('times');
         if ($request->hasFile('imagem')) {
-          $personagem->imagem =  $request->file('imagem')->store('imagens');
+
+            $uploadedFile = $request->file('imagem');
+            $originalName = $uploadedFile->getClientOriginalName();
+            $path = $uploadedFile->storeAs('imagens', $originalName);
+            $personagem->imagem = $path;
         }
         $personagem->descricao = $request->input('descricao');
         $personagem->save() ? $sucesso = "Deu tudo certo" : $sucesso = "Deu errado!";
 
         return view('/personagens/create',compact('sucesso'));
     }
+
+    public function atualizarPersonagem(Request $request, $id)
+{
+    
+    $personagem = Personagen::findOrFail($id);
+
+    $personagem->nome = $request->input('nome');
+    $personagem->sobrenome = $request->input('sobrenome');
+    $personagem->ramo = $request->input('ramo');
+    $personagem->idade = $request->input('idade');
+    $personagem->times = $request->input('times');
+    $personagem->descricao = $request->input('descricao');
+
+    if ($request->hasFile('imagem')) {
+        
+        $uploadedFile = $request->file('imagem');
+        $originalName = $uploadedFile->getClientOriginalName();
+        $path = $uploadedFile->storeAs('imagens', $originalName);
+        $personagem->imagem = $path;
+    }
+
+    $sucesso = $personagem->save() ?  'Atualizado com Sucesso' :  'Falha ao atualizar';
+
+    // Redirecionar para a página de listagem de personagens ou outra página desejada
+    return view('personagens/edit', compact('personagem','sucesso'));
+}
+
 
 }
