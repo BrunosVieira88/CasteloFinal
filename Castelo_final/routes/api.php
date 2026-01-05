@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+/*
+|--------------------------------------------------------------------------
+| Novocrud4 Routes
+|--------------------------------------------------------------------------
+*/
+Route::resource('novocrud4s', 'Novocrud4Controller');

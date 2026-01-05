@@ -2,7 +2,7 @@
     @isset($sucesso)
     {{$sucesso}}
     @endisset
-    <div class="container">
+    <div class="container mt-5">
         <h1>Editar Personagem</h1>
         <form action="{{ route('personagens.atualizar', ['id' => $personagem->id]) }}" method="POST"
             enctype="multipart/form-data">
@@ -58,7 +58,7 @@
                                 <label class="custom-file-label" for="imagem">
                                     @if ($personagem->imagem)
                                                   
-                                        <div class="input-group" style="float: right;">
+                                        <div class="input-group input-group-right">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">
                                                     {{ $personagem->imagem }} <i class="fa fa-paperclip ms-2"></i>
@@ -85,7 +85,7 @@
             </div>
 
             <div class="d-flex justify-content-end">
-
+                <button type="submit" class="btn btn-primary mt-2">Editar</button>
             </div>
 
 
@@ -93,10 +93,6 @@
 
         </form>
     </div>
-    <a href="/personagens">Listar personagens</a>
-    <style>
-        input[type="file"] {
-            display: none;
-        }
-    </style>
+    <a  class="btn btn-info" href="/personagens">Listar personagens</a>
+    
 </x-layout>

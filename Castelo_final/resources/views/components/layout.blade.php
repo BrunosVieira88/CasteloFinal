@@ -9,15 +9,9 @@
     <title>{{$title}}</title>
     <link rel="stylesheet" href="{{asset('site/bootstrap.css')}}">
 </head>
-<body style="background-image:url('img/estrelados.jpg');">
+<body class="app-body">
     {{$slot}}
 </body>
 </html>
 <script src="{{asset('site/jquery.js')}}"></script>
 <script src="{{asset('site/bootstrap.js')}}"></script>
-<style>
-    body{
-        width: 100%;
-    }
-</style>
-

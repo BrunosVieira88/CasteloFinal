@@ -1,55 +1,93 @@
 <x-layout title="Conselho Sul Americano de Magia">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@800&display=swap');
-        h2{
-            text-align: center;
-            color: white;
-            font-family: 'Golos Text', sans-serif;
-            text-shadow: 2px 2px 2px black;
-        }
-        h1{
-          text-align: center;
-            color: white;
-            font-family: 'Golos Text', sans-serif;
-            text-shadow: 2px 2px 2px black;
-        }
-
-      </style>
-      <section class="container">
-        <div class="mt-3">
-        <h1>Conselho Sul Americano de Magia - CSM</h1>
-        <div class="text-center">
-          <img src="../img/CSM.png" class="img-fluid" style="width: 45%;" alt="">
+    
+    <section class="container council-page">
+        <div class="row council-hero g-4 align-items-center leader-card">
+            <div class="col-lg-6">
+                <div class="council-badge">CSM - Conselho Sul Americano</div>
+                <h1>Conselho Sul Americano de Magia</h1>
+                <p>
+                    Guardiao da ordem magica na America do Sul, o CSM coordena politicas, tratados e a seguranca das
+                    comunidades bruxas, equilibrando tradicao, mistica e poder institucional.
+                </p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="../img/CSM.png" class="img-fluid" alt="">
+            </div>
         </div>
-      </div>
-      <div class="row card p-5">
-        <p>
-            A fachada da sede do Conselho Nacional de Magia Sul-Americano seria marcada por um caminho de árvores pau-brasil dos dois lados, simbolizando a riqueza natural e cultural da América do Sul. As árvores criariam um belo corredor que levaria até a entrada principal, adicionando um toque de mistério e magia ao local.
-            A entrada principal seria parecida com a de uma igreja, com uma grande porta de madeira esculpida e ornamentada com símbolos mágicos e heráldicos. A porta seria flanqueada por estátuas de pedra que representariam figuras lendárias da magia sul-americana, como curandeiros, pajés, xamãs e feiticeiros.
-            A fachada seria adornada com vitrais coloridos que retratariam cenas místicas da história sul-americana, talvez com a presença de figuras lendárias e deuses da região. A construção teria um formato grandioso, com torres altas e cúpulas abobadadas, adicionando um ar majestoso e imponente ao edifício.
-            A sede do Conselho Nacional de Magia Sul-Americano teria uma aparência única e distinta, mesclando elementos da arquitetura religiosa com símbolos e ornamentos mágicos, criando uma atmosfera única que refletiria a riqueza cultural e mística da América do Sul.
-        </p>
-        <p>
-          O Conselho Mágico Brasileiro (CMB) é o principal órgão regulador da comunidade bruxa no Brasil, sendo responsável por garantir que as leis e regulamentos relacionados à prática da magia sejam seguidos corretamente. A sede do CMB, conhecida como Matriz Espelhada, está localizada na Praça da Sé, em São Paulo. O prédio é semelhante aos prédios históricos da região, porém, possui elementos mágicos que o tornam único.
-            Ao entrar na Matriz Espelhada, pode-se notar a grandiosidade do local. O interior é amplo e majestoso, com uma decoração imponente e elegante, que reflete a importância do Conselho Mágico Brasileiro. O saguão principal é adornado por colunas imponentes e um enorme lustre de cristal que ilumina o ambiente.
-            Há diversas salas de reunião, cada uma destinada a um departamento específico, tais como o Departamento de Execução das Leis da Magia, o Departamento de Regulamentação e Controle de Criaturas Mágicas, o Departamento de Mistérios e o Departamento de Transportes Mágicos. Cada departamento tem sua própria equipe de especialistas e funcionários, que trabalham juntos para garantir a eficácia do Conselho Mágico Brasileiro.
-        </p>
-      </div>
 
-    <div class="row mt-3">
-      <h1>Seu lider Hector Gomes</h1>
-      <div class="text-center">
-        <img src="../img/Hector_Gomes.png" class="img-fluid" style="width: 45%;" alt="">
-      </div>
-      <div class=" card p-5">
-            Hector Gomes. Ele seria um homem alto e magro, com cabelos negros e lisos penteado para trás. Teria uma pele pálida e olhos escuros penetrantes, que parecem sempre avaliar a situação e as pessoas com desconfiança.
+        <div class="row mt-4 g-4">
+            <div class="col-lg-6">
+                <div class="section-card leader-card">
+                    <h2>Sede do Conselho Sul-Americano</h2>
+                    <p>
+                        A fachada da sede do Conselho Nacional de Magia Sul-Americano seria marcada por um caminho de
+                        arvores pau-brasil dos dois lados, simbolizando a riqueza natural e cultural da America do Sul.
+                        As arvores criariam um belo corredor que levaria ate a entrada principal, adicionando um toque
+                        de misterio e magia ao local.
+                    </p>
+                    <p>
+                        A entrada principal seria parecida com a de uma igreja, com uma grande porta de madeira esculpida
+                        e ornamentada com simbolos magicos e heraldicos. A porta seria flanqueada por estatuas de pedra
+                        que representariam figuras lendarias da magia sul-americana, como curandeiros, pajes, xamas e
+                        feiticeiros.
+                    </p>
+                    <p>
+                        A fachada seria adornada com vitrais coloridos que retratariam cenas misticas da historia
+                        sul-americana. A construcao teria um formato grandioso, com torres altas e cupulas abobadadas,
+                        adicionando um ar majestoso e imponente ao edificio.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="section-card leader-card">
+                    <h2>Conselho Magico Brasileiro</h2>
+                    <p>
+                        O Conselho Magico Brasileiro (CMB) e o principal orgao regulador da comunidade bruxa no Brasil,
+                        sendo responsavel por garantir que as leis e regulamentos relacionados a pratica da magia sejam
+                        seguidos corretamente. A sede do CMB, conhecida como Matriz Espelhada, esta localizada na Praca
+                        da Se, em Sao Paulo.
+                    </p>
+                    <p>
+                        Ao entrar na Matriz Espelhada, pode-se notar a grandiosidade do local. O interior e amplo e
+                        majestoso, com uma decoracao imponente e elegante, que reflete a importancia do Conselho Magico
+                        Brasileiro. O saguao principal e adornado por colunas imponentes e um enorme lustre de cristal
+                        que ilumina o ambiente.
+                    </p>
+                    <p>
+                        Ha diversas salas de reuniao, cada uma destinada a um departamento especifico, tais como o
+                        Departamento de Execucao das Leis da Magia, o Departamento de Regulamentacao e Controle de
+                        Criaturas Magicas, o Departamento de Misterios e o Departamento de Transportes Magicos.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-            Hector seria um bruxo poderoso e muito inteligente, com grande conhecimento das artes das trevas e da magia em geral. Ele se tornou líder do CMB depois de anos de luta política nos bastidores, usando sua habilidade para manipular pessoas e situações para alcançar seus objetivos.
-
-            No entanto, Hector não é um líder justo ou benevolente. Ele usa o poder do CMB para se manter no poder, muitas vezes recorrendo a medidas drásticas, como a manipulação da memória de bruxos para garantir a estabilidade do governo e esconder as verdades inconvenientes. Hector acredita que a revolução em andamento é uma ameaça à estabilidade do país e ao seu próprio poder, e está disposto a fazer qualquer coisa para detê-la, mesmo que isso signifique sacrificar vidas inocentes.
-      </div>
-    </div>
-      </section>
+        <div class="leader-card row g-4 align-items-center mt-2">
+            <div class="col-lg-4 leader-media text-center">
+                <img src="../img/Hector_Gomes.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-8">
+                <div class="leader-title">Seu lider: Hector Gomes</div>
+                <p>
+                    Hector Gomes seria um homem alto e magro, com cabelos negros e lisos penteado para tras. Teria uma
+                    pele palida e olhos escuros penetrantes, que parecem sempre avaliar a situacao e as pessoas com
+                    desconfianca.
+                </p>
+                <p>
+                    Hector seria um bruxo poderoso e muito inteligente, com grande conhecimento das artes das trevas e
+                    da magia em geral. Ele se tornou lider do CMB depois de anos de luta politica nos bastidores, usando
+                    sua habilidade para manipular pessoas e situacoes para alcancar seus objetivos.
+                </p>
+                <p>
+                    No entanto, Hector nao e um lider justo ou benevolente. Ele usa o poder do CMB para se manter no
+                    poder, muitas vezes recorrendo a medidas drasticas, como a manipulacao da memoria de bruxos para
+                    garantir a estabilidade do governo e esconder as verdades inconvenientes. Hector acredita que a
+                    revolucao em andamento e uma ameaca a estabilidade do pais e ao seu proprio poder, e esta disposto a
+                    fazer qualquer coisa para dete-la, mesmo que isso signifique sacrificar vidas inocentes.
+                </p>
+            </div>
+        </div>
+    </section>
 
 
 </x-layout>

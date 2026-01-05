@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="nav-link active" aria-current="page" href="/"><img src="img/Brasao.png" style="width: 10%;border-radius: 50%;" class="img-fluid" alt=""></a>
+          <a class="nav-link active" aria-current="page" href="/"><img src="img/Brasao.png" class="img-fluid navbar-logo" alt=""></a>
 
           <button class="ml-5 btn btn-outline-primary" onclick="playAudio()">Aumente a imersão</button>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

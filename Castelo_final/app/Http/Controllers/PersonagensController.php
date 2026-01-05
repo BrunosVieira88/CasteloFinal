@@ -45,6 +45,26 @@ class PersonagensController extends Controller
 
     }
 
+    public function DeletarPersonagens($id)
+    {
+        $personagem = Personagen::find($id);
+
+        if (!$personagem) {
+            return redirect('/personagens')->with('error', 'Personagem não encontrado.');
+        }
+    
+        $personagem->delete();
+        return redirect('/personagens')->with('success', 'Personagem deletado com sucesso.');
+
+    }
+  
+    public function RedirecionaPersonagem(Request $request, $ramo, $nome)
+    {
+
+        return view('personagem/'.$nome);
+
+    }
+
     public function store(Request $request)
     {
         $request->validate([

@@ -26,6 +26,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/personagens',[PersonagensController::class, 'ListarPersonagens']);
 Route::get('/personagens/create',[PersonagensController::class, 'CriarPersonagens']);
 Route::get('/personagens/editar/{id}',[PersonagensController::class, 'ResgatarPersonagens']);
+Route::get('/personagens/deletar/{id}',[PersonagensController::class, 'DeletarPersonagens']);
+
+Route::get('/{ramo}/{nome}',[PersonagensController::class, 'RedirecionaPersonagem']);
+
 Route::post('/personagens/atualizar/{id}',[PersonagensController::class,'atualizarPersonagem'])->name('personagens.atualizar');
 
 Route::post('personagens/armazenar',[PersonagensController::class, 'store']);

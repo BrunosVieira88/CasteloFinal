@@ -3,7 +3,7 @@
     {{$sucesso}}
     @endisset
     <div class="container">
-        <div class="card p-3 mt-5">
+        <div class="card p-3 mt-5 leader-card">
             <h1>Adicionar Personagem</h1>
             <form action="/personagens/armazenar" method="POST" enctype="multipart/form-data">
                 @csrf
@@ -83,11 +83,7 @@
       
     </div>
     
-    <style>
-        input[type="file"] {
-            display: none;
-        }
-    </style>
+    
     <script>
         function updateFileName(input) {
             const label = input.nextElementSibling; // Get the label element next to the input

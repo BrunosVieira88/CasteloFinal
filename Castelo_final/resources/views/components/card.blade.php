@@ -1,12 +1,7 @@
-<style>
-.img-edit{
-  height: 48vh ;
-  width: 80vh;
-}
-</style>
+
 <div class="row " id="pequeno">
     <div class="col-md-3  mt-2 mr-2">
-      <div class="p-3 card" style="height: 36em;">
+      <div class="p-3 card leader-cardhome-card">
         <img src="img/CasteloBruxo.png" class=" img-edit" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{ $terceiroTitulo }}</h5>
@@ -16,7 +11,7 @@
       </div>
     </div>
     <div class="col-md-3  mt-2">
-      <div class="p-3 card" style="height: 36em;">
+      <div class="p-3 card leader-cardhome-card">
         <img src="img/CMB.png" class=" img-edit" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{ $segundoTitulo }}</h5>
@@ -27,7 +22,7 @@
       </div>
     </div>
     <div class="col-md-3  mt-2">
-      <div class="p-3 card" style="height: 36em;">
+      <div class="p-3 card leader-cardhome-card">
         <img src="img/PersonagensReunidos.png" class=" img-edit" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{ $primeiroTitulo }}</h5>
@@ -38,7 +33,7 @@
       </div>
     </div>
     <div class="col-md-3  mt-2">
-      <div class="p-3 card" style="height: 36em;">
+      <div class="p-3 card leader-cardhome-card">
         <img src="img/Times.png" class="card-img-top img-edit" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{ $quartoTitulo }}</h5>

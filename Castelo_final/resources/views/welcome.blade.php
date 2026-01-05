@@ -1,65 +1,61 @@
 <x-layout title="Castelo Bruxo">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-    p{
-        font-family: 'Special Elite', cursive;
-    }
-</style>
+
 <x-navbar></x-navbar>
-  <div class="d-flex justify-content-center mt-3">
-      <img src="img/CasteloBruxo.png" class="img-fluid paraimagem fade-out" style="opacity: 0.8;" alt="" >
-      <p id="welcome-message" class="card text-center" style="opacity: 0.8;width:50%;position:absolute;margin-top:20%;"></p>
-      <a href="/login" class="btn btn-primary" style="opacity: 0.9;position:absolute;margin-top:25%;">Entrar</a>
+  <div class="welcome-page d-flex justify-content-center mt-3">
+      <img src="img/CasteloBruxo.png" class="img-fluid paraimagem fade-out welcome-hero-img" alt="" >
+      <div class="typewriter welcome-message" data-speed="28" data-pause="30000">
+          <p class="card leader-cardtext-center">BEM VINDO ESTUDANTE A CASTELOBRUXO</p>
+      </div>
+      <a href="/login" class="btn btn-primary welcome-cta">Entrar</a>
   </div>
 <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const blocks = document.querySelectorAll('.typewriter');
 
-  // Define a mensagem que será exibida
-  const message = "BEM VINDO ESTUDANTE A CASTELOBRUXO";
+    blocks.forEach((block) => {
+      const speed = parseInt(block.dataset.speed || '28', 10);
+      const pause = parseInt(block.dataset.pause || '30000', 10);
+      const paragraphs = Array.from(block.querySelectorAll('p'));
+      const texts = paragraphs.map((p) => p.textContent.trim());
 
-  // Obtenha o elemento da mensagem
-  const welcomeMessage = document.getElementById("welcome-message");
+      paragraphs.forEach((p) => {
+        p.textContent = '';
+      });
 
-  // Defina a velocidade de animação em milissegundos
-  const animationSpeed = 150;
+      let pIndex = 0;
+      let charIndex = 0;
 
-  // Inicialize o índice do caractere
-  let charIndex = 0;
+      const typeNext = () => {
+        if (pIndex >= paragraphs.length) {
+          return;
+        }
 
-  // Crie uma função para exibir a mensagem letra por letra
-  function typeMessage() {
-    // Obtenha o próximo caractere da mensagem
-    const char = message.charAt(charIndex);
+        const p = paragraphs[pIndex];
+        const text = texts[pIndex];
 
-    // Adicione o caractere ao elemento da mensagem
-    welcomeMessage.innerHTML += char;
+        if (!text) {
+          pIndex += 1;
+          charIndex = 0;
+          setTimeout(typeNext, pause);
+          return;
+        }
 
-    // Avance para o próximo caractere
-    charIndex++;
+        p.classList.add('typing');
 
-    // Se ainda houver caracteres na mensagem, aguarde a próxima animação
-    if (charIndex < message.length) {
-      setTimeout(typeMessage, animationSpeed);
-    } else {
-      // Quando a mensagem inteira tiver sido exibida, espere um pouco e, em seguida, remova-a gradualmente
-      setTimeout(() => {
-        let opacity = 0.8;
-        const fadeOutInterval = setInterval(() => {
-          opacity -= 0.1;
-          welcomeMessage.style.opacity = opacity;
-          if (opacity <= 0) {
-            clearInterval(fadeOutInterval);
-            // Quando a mensagem desaparecer completamente, redefina o índice do caractere e comece novamente
-            charIndex = 0;
-            welcomeMessage.innerHTML = "";
-            welcomeMessage.style.opacity = 0.8;
-            setTimeout(typeMessage, animationSpeed);
-          }
-        }, animationSpeed);
-      }, 1000);
-    }
-  }
+        if (charIndex < text.length) {
+          p.textContent += text.charAt(charIndex);
+          charIndex += 1;
+          setTimeout(typeNext, speed);
+        } else {
+          p.classList.remove('typing');
+          pIndex += 1;
+          charIndex = 0;
+          setTimeout(typeNext, pause);
+        }
+      };
 
-  // Inicie a animação da mensagem
-  typeMessage();
+      setTimeout(typeNext, 600);
+    });
+  });
 </script>
 </x-layout>
