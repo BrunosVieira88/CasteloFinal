@@ -47,7 +47,7 @@
                                 <div class="col-lg-3 col-md-4 col-sm-6">
                                     <div class="personagem-card leader-card" onclick="redirecionar('/{{ $personagem->ramo }}/{{ $personagem->nome }}')">
                                         <div class="personagem-media">
-                                            <img src="storage/{{ $personagem->imagem }}" class="img-fluid" alt="">
+                                            <img src="{{ asset('img/personagens.png') }}" class="img-fluid" alt="">
                                         </div>
                                         <div class="personagem-name">{{ $personagem->nome }} {{ $personagem->sobrenome }}</div>
                                         <div class="personagem-actions">
@@ -78,4 +78,3 @@
             });
         </script>
 </x-layout>
-
